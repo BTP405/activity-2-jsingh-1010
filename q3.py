@@ -11,6 +11,7 @@ def wordCount(t):
         for line_num, line in enumerate(file, start=1):
             words = line.split()
             for word in words:
+# To ensure uniformity, remove punctuation and convert to lowercase.
                 word = word.strip('.,!?;:').lower()
                 if word in w_dict:
                     w_dict[word].append(line_num)
