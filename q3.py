@@ -1,13 +1,10 @@
-'''
-Compile a dictionary with unique words as keys and lists of line
-numbers where the term appears. Count the instances of each word
-in the provided text file.The path to the text file is indicated
-by the parameter t (str).Returns: dict: A dictionary with lists
-of line numbers as values and words as keys.
+""" 
+Count the times a word appears in a text file and provide a
+dictionary that associates each word with a list of line numbers.
+Args: t (str): The name of the file to be processed.Returns: dict: A 
+dictionary with lists of line numbers for values and words for keys.
 
-
-'''
-
+"""
 def wordCount(t):
     w_dict = {}
     with open(t, 'r') as file:
